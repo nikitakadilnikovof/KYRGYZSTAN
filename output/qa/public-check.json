@@ -1,0 +1,37 @@
+{
+  "anonymous": true,
+  "checks": [
+    {
+      "path": "/ru/",
+      "status": 200,
+      "type": "text/html",
+      "correctLanguage": true,
+      "telegram": true,
+      "whatsapp": true
+    },
+    {
+      "path": "/tr/",
+      "status": 200,
+      "type": "text/html",
+      "correctLanguage": true,
+      "telegram": true,
+      "whatsapp": true
+    },
+    {
+      "path": "/assets/styles.css",
+      "status": 200,
+      "type": "text/css"
+    },
+    {
+      "path": "/assets/site.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "path": "/assets/photos/park-10-1920.webp",
+      "status": 200,
+      "type": "image/webp"
+    }
+  ],
+  "passed": true
+}
