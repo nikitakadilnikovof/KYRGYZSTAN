@@ -1,0 +1,84 @@
+{
+  "pages": [
+    {
+      "lang": "ru",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "broken": [],
+      "h1": "Туда, гдедышится свободнее.",
+      "language": "ru"
+    },
+    {
+      "lang": "tr",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "broken": [],
+      "h1": "Derin bir nefes.Yeni bir dünya.",
+      "language": "tr"
+    },
+    {
+      "lang": "ru",
+      "width": 768,
+      "scrollWidth": 768,
+      "broken": [],
+      "h1": "Туда, гдедышится свободнее.",
+      "language": "ru"
+    },
+    {
+      "lang": "tr",
+      "width": 768,
+      "scrollWidth": 768,
+      "broken": [],
+      "h1": "Derin bir nefes.Yeni bir dünya.",
+      "language": "tr"
+    },
+    {
+      "lang": "ru",
+      "width": 390,
+      "scrollWidth": 390,
+      "broken": [],
+      "h1": "Туда, гдедышится свободнее.",
+      "language": "ru"
+    },
+    {
+      "lang": "tr",
+      "width": 390,
+      "scrollWidth": 390,
+      "broken": [],
+      "h1": "Derin bir nefes.Yeni bir dünya.",
+      "language": "tr"
+    },
+    {
+      "lang": "ru",
+      "width": 320,
+      "scrollWidth": 320,
+      "broken": [],
+      "h1": "Туда, гдедышится свободнее.",
+      "language": "ru"
+    },
+    {
+      "lang": "tr",
+      "width": 320,
+      "scrollWidth": 320,
+      "broken": [],
+      "h1": "Derin bir nefes.Yeni bir dünya.",
+      "language": "tr"
+    }
+  ],
+  "interactions": [
+    "ru: gallery open, next, escape",
+    "ru: FAQ",
+    "ru: language switch preserves section",
+    "tr: gallery open, next, escape",
+    "tr: FAQ",
+    "tr: language switch preserves section",
+    "ru: mobile menu and route anchor",
+    "tr: mobile menu and route anchor",
+    "/: HTTP 200",
+    "/ru/credits/: HTTP 200",
+    "/tr/credits/: HTTP 200",
+    "/absent-page: HTTP 404"
+  ],
+  "errors": [],
+  "passed": true
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kyrgyzstan-nature-journey.iteachet-9750.chatgpt.site/sitemap.xml

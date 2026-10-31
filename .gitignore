@@ -1,0 +1,9 @@
+node_modules/
+research/candidates/
+research/originals/
+research/contact-*.jpg
+output/advertising/originals/
+output/qa/*.png
+output/*.zip
+*.tar.gz
+.openai/local/
