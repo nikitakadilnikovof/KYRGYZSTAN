@@ -4,6 +4,27 @@
 
 [Русская версия](https://kyrgyzstan-nature-journey.iteachet-9750.chatgpt.site/ru/) · [Türkçe](https://kyrgyzstan-nature-journey.iteachet-9750.chatgpt.site/tr/)
 
+GitHub Pages: [выбор языка](https://nikitakadilnikovof.github.io/KYRGYZSTAN/) · [русский](https://nikitakadilnikovof.github.io/KYRGYZSTAN/ru/) · [Türkçe](https://nikitakadilnikovof.github.io/KYRGYZSTAN/tr/).
+
+## Публикация на GitHub Pages
+
+Workflow `.github/workflows/pages.yml` при обновлении `main` собирает сайт и публикует содержимое `dist/`. В Settings → Pages источником должны быть **GitHub Actions**.
+
+Сборка учитывает адрес хостинга и префикс репозитория через `SITE_ORIGIN` и `SITE_BASE_PATH`. GitHub Actions получает их из `actions/configure-pages`. Эти настройки применяются к страницам, изображениям, галереям, переключению языка и метаданным. Без переменных окружения сохраняется обычная сборка для корня домена.
+
+Для локальной проверки адреса с префиксом в PowerShell:
+
+```powershell
+$env:SITE_ORIGIN = 'https://nikitakadilnikovof.github.io'
+$env:SITE_BASE_PATH = '/KYRGYZSTAN'
+$env:SITE_OUTPUT_DIR = 'output/pages-preview'
+npm.cmd run build
+npm.cmd run check
+npm.cmd run preview
+```
+
+Откройте <http://127.0.0.1:4173/KYRGYZSTAN/ru/>. Для обычной локальной сборки откройте новый терминал без этих переменных.
+
 ## Локальный запуск
 
 Требуется Node.js. В папке проекта выполните:

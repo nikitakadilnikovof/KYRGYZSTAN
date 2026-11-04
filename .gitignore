@@ -7,3 +7,5 @@ output/qa/*.png
 output/*.zip
 *.tar.gz
 .openai/local/
+output/pages-preview/
+output/qa/github-pages-*.json
