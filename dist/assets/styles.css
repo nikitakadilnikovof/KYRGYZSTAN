@@ -8,3 +8,6 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
 @media(max-width:700px){.contact-inner{grid-template-columns:minmax(0,1fr)}.contact-inner>div{min-width:0}.contact h2{font-size:clamp(40px,11.5vw,48px)}.hero-image{image-rendering:auto}}
+
+.lightbox-image[hidden],.lightbox-message[hidden],.lightbox-retry[hidden]{display:none}.lightbox-stage{position:relative;justify-content:space-between;min-height:min(58svh,540px)}.lightbox-message{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:70%;text-align:center;font-size:14px;color:#d0d9ca}.lightbox-message p{margin:0}.lightbox .lightbox-retry{border:1px solid #91a99d;border-radius:2px;margin-top:18px;padding:10px 18px;font-size:12px}.lightbox-image{margin-inline:auto}.lightbox-stage>button{z-index:1}
+@media(max-width:700px){.lightbox-stage{min-height:55svh}.lightbox-message{font-size:13px}}

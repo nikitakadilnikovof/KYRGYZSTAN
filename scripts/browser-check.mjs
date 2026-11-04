@@ -21,7 +21,9 @@ try{
   }
   if(width===1440){
     await page.locator('.story .gallery-main').first().click();if(!(await page.locator('.lightbox').isVisible()))throw Error('Gallery failed');
-    const first=await page.locator('.lightbox-image').getAttribute('src');await page.keyboard.press('ArrowRight');const second=await page.locator('.lightbox-image').getAttribute('src');if(first===second)throw Error('Gallery next failed');
+    await page.waitForFunction(()=>document.querySelector('.lightbox').dataset.state==='ready');
+    const first=await page.locator('.lightbox-image').getAttribute('src');await page.keyboard.press('ArrowRight');
+    await page.waitForFunction(first=>document.querySelector('.lightbox').dataset.state==='ready'&&document.querySelector('.lightbox-image').getAttribute('src')!==first,first);
     await page.locator('.lightbox-image').evaluate(i=>i.decode());
     await page.keyboard.press('Escape');if(await page.locator('.lightbox').isVisible())throw Error('Gallery close failed');report.interactions.push(lang+': gallery open, next, escape');
     await page.locator('.questions summary').first().click();if(!await page.locator('.questions details').first().evaluate(e=>e.open))throw Error('FAQ failed');report.interactions.push(lang+': FAQ');

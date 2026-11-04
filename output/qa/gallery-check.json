@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    "ru: reopened a different gallery without showing the old photograph",
+    "ru: rapid navigation ignores older responses arriving later",
+    "ru: closing during loading cannot overwrite the next gallery",
+    "ru: failed loading shows a retry action and retry displays the selected photo",
+    "ru: swipe still works after replacing the decoded image",
+    "tr: reopened a different gallery without showing the old photograph",
+    "tr: rapid navigation ignores older responses arriving later",
+    "tr: closing during loading cannot overwrite the next gallery",
+    "tr: failed loading shows a retry action and retry displays the selected photo",
+    "tr: swipe still works after replacing the decoded image"
+  ],
+  "errors": []
+}

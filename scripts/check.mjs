@@ -18,7 +18,7 @@ async function checkLinks(file,html){
   await checkLocal(file,url);
  }
  for(const m of html.matchAll(/srcset="([^"]+)"/g))for(const entry of m[1].split(','))await checkLocal(file,entry.trim().split(/\s+/)[0]);
- for(const m of html.matchAll(/data-gallery="([^"]+)"/g))for(const photo of JSON.parse(decode(m[1])))await checkLocal(file,photo.src);
+ for(const m of html.matchAll(/data-gallery="([^"]+)"/g))for(const photo of JSON.parse(decode(m[1]))){await checkLocal(file,photo.src);if(photo.preview)await checkLocal(file,photo.preview);}
 }
 for(const lang of ['ru','tr'])for(const section of ['','credits/']){
  const file=path.join(outputDir,lang,section,'index.html');const html=await fs.readFile(file,'utf8');
